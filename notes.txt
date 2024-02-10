@@ -1,0 +1,2 @@
+In home.css, I have 15vh for header and 85 vh
+for the container. We can remove this or keep it.

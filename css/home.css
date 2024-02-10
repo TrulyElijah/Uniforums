@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    background-color: black;
+    height: 15vh;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav .search{
+    margin-left: 25px;
+}
+
+header nav .profile{
+    margin-right: 25px;
+}
+
+
+header img{
+    height: 100px;
+}
+
+
+
+
+
+
+/* Meat of homepage */
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: yellow;
+    height: 85vh;
+}
+
+.container .middle {
+    text-align: center;
+    background-color: red;
+    
+}
+
+.container .middle li{
+    list-style: none;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+/* Left and right boxing done here */
+
+
+.container .left li {
+    border: 1px solid black;
+    list-style: none;
+    background-color: grey;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.container .left{
+    text-align: center;
+}
+
+.container .right li{
+    border: 1px solid black;
+    list-style: none;
+    background-color: grey;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.container .right{
+    text-align: center;
+}
+
+
+
