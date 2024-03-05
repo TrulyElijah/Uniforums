@@ -4,8 +4,8 @@
 }
 
 body{
-    background: rgb(70, 70, 70);
-    color:white;
+    background: rgb(33, 32, 32);
+    color:rgb(244, 233, 233);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: xx-large;
 }
@@ -14,9 +14,10 @@ h1{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    font-size: xx-large;
 }
 
-.container{
+ .container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,11 +27,66 @@ h1{
 .outer-box{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: normal;
     flex-direction: column;
-    height: 800px;
-    width: 800px;
+    height: 900px;
+    width: 600px;
     border-radius: 10px;
-    color: rgb(208, 191, 191);
+    color: rgb(253, 250, 250);
     box-shadow: 0px 2px 10px 0px rgb(250, 246, 246);
+}
+
+.profile{
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    
+}
+
+.username-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 400px;
+    font-size: Large;
+    color: black;
+    margin: auto;
+    background-color: white;
+}
+
+.email-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 400px;
+    font-size: Large;
+    color: black;
+    margin: auto;
+    background-color: white;
+}
+
+.name-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 400px;
+    font-size: Large;
+    color: black;
+    margin: auto;
+    background-color: white;
+}
+
+.bio-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    font-size: xx-large;
+    color: black;
+    margin: auto;
+    background-color: white;
 }
