@@ -1,11 +1,12 @@
 *{
     padding: 0px;
     margin: 0px;
+    
 }
 
 body{
-    background: rgb(33, 32, 32);
-    color:rgb(244, 233, 233);
+    background: rgb(26, 24, 24);
+    color:rgb(248, 243, 243);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: xx-large;
 }
@@ -15,6 +16,7 @@ h1{
     justify-content: center;
     margin-top: 20px;
     font-size: xx-large;
+    color: rgb(255, 251, 251);
 }
 
  .container{
@@ -68,6 +70,18 @@ h1{
 }
 
 .name-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 400px;
+    font-size: Large;
+    color: black;
+    margin: auto;
+    background-color: white;
+}
+
+.school-box{
     display: flex;
     justify-content: center;
     align-items: center;
