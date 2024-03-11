@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: maroon;
+}
+
+header h1 {
+    margin: 10px
+}
+
+.ursinus{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    margin: 10px;
+}
+
+.profile {
+    height: 100px;
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input[type=text] {
+    padding: 8px;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 8px 20px;
+    background-color: gray;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.discussion-posts {
+    list-style-type: decimal;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.discussion-posts li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.discussion-posts li button {
+    width: 100%;
+    text-align: left;
+    border: none;
+    background-color: white;
+}
