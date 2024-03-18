@@ -1,0 +1,18 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
+const discussionSchema = new Schema({
+    title: {
+        type: String,
+        required: true
+    },
+    discussion: {
+        type: String,
+        required: true
+    }
+
+}, { timestamps: true });
+
+const Discussion = mongoose.model("Discussion", discussionSchema); //Looks for plural version of this in the database
+// Automatically looks for Discussions collection^
+module.exports = Discussion;
