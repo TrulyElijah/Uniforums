@@ -14,7 +14,10 @@ app.set('view engine', 'ejs')
 app.use(express.static('views'));
 app.use(express.static(__dirname + '/public')); //contains css and images
 
+
 // mongoose and mongo sandbox routes
+
+
 app.get('/add-discussion', (req, res) => {
     const discussion = new Discussion({
         title: "new discussion",
@@ -29,11 +32,18 @@ app.get('/add-discussion', (req, res) => {
         })
 })
 
-//routing
+app.get('/createDiscussion', (req, res) => {
+    res.render('create_discussion', { title: 'Create Discussion'});
+})
+
+app.get('/viewDiscussions', (req, res) => {
+    res.render('all_discussions', { title: 'View Discussions'})
+})
 
 app.get('/', (req, res) => {
     res.render('home', { title: 'Home'});
 })
+
 
 app.get('/createAccount', (req, res) => {
     res.render('create_account', { title: 'Create Account'});
@@ -43,9 +53,6 @@ app.get('/createAnnouncement', (req, res) => {
     res.render('create_announcement', { title: 'Create Announcement'});
 })
 
-app.get('/createDiscussion', (req, res) => {
-    res.render('create_discussion', { title: 'Create Discussion'});
-})
 
 app.get('/login', (req, res) => {
     res.render('login', { title: 'Login'});
