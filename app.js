@@ -29,8 +29,6 @@ app.get('/add-discussion', (req, res) => {
         })
 })
 
-
-
 //routing
 
 app.get('/', (req, res) => {
