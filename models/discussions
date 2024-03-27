@@ -14,5 +14,5 @@ const discussionSchema = new Schema({
 }, { timestamps: true });
 
 const Discussion = mongoose.model("Discussion", discussionSchema); //Looks for plural version of this in the database
-// Automatically looks for Discussions collection^
+// Automatically looks for Discussions collection^ // why does it connect to lower case one?
 module.exports = Discussion;

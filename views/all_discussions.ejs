@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../css/all_discussions.css">
     <title>Uniforums | <%= title %></title>
 </head>
-
 <body>
 
     <%- include('./partials/navbar.ejs') %>
@@ -18,16 +17,16 @@
             <button>Search</button>
         </div>
         <ol class ="discussion-posts">
-            <li><button type="button">Discussion 1</button></li>
-            <li><button type="button">Discussion 2</button></li>
-            <li><button type="button">Discussion 3</button></li>
-            <li><button type="button">Discussion 4</button></li>
-            <li><button type="button">Discussion 5</button></li>
-            <li><button type="button">Discussion 6</button></li>
-            <li><button type="button">Discussion 7</button></li>
-            <li><button type="button">Discussion 8</button></li>
-            <li><button type="button">Discussion 9</button></li>
-            <li><button type="button">Discussion 10</button></li>
+
+            <% if (discussions.length > 0) { %>
+                <% discussions.forEach(discussion => { %>
+                <li><button type="button"> <%= discussion.title %> </button></li>
+            
+                <% }) %>
+            <% }else {%>
+                <p> There are no discussions to display...</p>
+                <%  }%>
+
         </ol>
     </main>
 </body>
