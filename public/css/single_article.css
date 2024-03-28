@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    background-color: black;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav .search{
+    margin-left: 25px;
+}
+
+header nav .profile{
+    margin-right: 25px;
+}
+
+header img{
+    height: 100px;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1100px;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.article p {
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.outer-box{
+
+    /* box-shadow: 1px 1px 1px 1px rgb(0, 0, 0); */
+    border: solid black 1px;
+    padding: 200px;
+    border-radius: 20px;
+
+}
+
+.article div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
