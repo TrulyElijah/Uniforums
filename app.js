@@ -63,6 +63,10 @@ app.get('/viewProfile', (req, res) => {
     res.render('view_profile', { title: 'Profile'});
 })
 
+app.get('/singleArticle', (req, res) => {
+    res.render('single_article', { title: 'Single Article'});
+})
+
 app.use((req, res) => {
     res.status(404).render('404');
 })
