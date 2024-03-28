@@ -15,9 +15,9 @@
     <h1>Create New Discussion</h1>
     <div class="container">
         <div class="outer-box">
-            <form class="input">
-                <input type="text" id="username" class="" placeholder="Title of Discussion" required>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Discuss..."></textarea>
+            <form class="input" action="/discussions" method="POST">
+                <input name="title" placeholder="Title of Discussion" required>
+                <textarea name="discussion" cols="30" rows="10" placeholder="Discuss..."></textarea>
                 <button>Post</button>
             </form>
         </div>

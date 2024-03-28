@@ -20,7 +20,9 @@
 
             <% if (discussions.length > 0) { %>
                 <% discussions.forEach(discussion => { %>
-                <li><button type="button"> <%= discussion.title %> </button></li>
+                <a href=""><button type="button"></button><li> <%= discussion.title %> </li></button></a>
+                <!-- Somehow bring this to a single discussion page -->
+                <!-- Use id of discussion post as url -->
             
                 <% }) %>
             <% }else {%>
