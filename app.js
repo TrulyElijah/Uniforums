@@ -67,6 +67,10 @@ app.get('/singleArticle', (req, res) => {
     res.render('single_article', { title: 'Single Article'});
 })
 
+app.get('/allDiscussions', (req, res) => {
+    res.render('all_discussions', { title: 'All Discussions'});
+})
+
 app.use((req, res) => {
     res.status(404).render('404');
 })
