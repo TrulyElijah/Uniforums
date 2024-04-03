@@ -92,6 +92,10 @@ app.get('/singleArticle', (req, res) => {
     res.render('single_article', { title: 'Article'});
 })
 
+app.get('/allArticles', (req, res) => {
+    res.render('all_articles', { title: 'All Articles'});
+})
+
 app.get('/allDiscussions', (req, res) => {
     res.render('all_discussions', { title: 'All Discussions'});
 })
