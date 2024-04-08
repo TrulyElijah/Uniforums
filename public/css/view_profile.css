@@ -54,9 +54,9 @@ h1{
     height: 20px;
     width: 400px;
     font-size: Large;
-    color: rgb(12, 12, 12);
+    color: black;
     margin: auto;
-    background-color: rgb(244, 242, 242);
+    background-color: white;
 }
 
 .email-box{
