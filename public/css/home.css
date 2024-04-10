@@ -40,53 +40,66 @@ header img{
 .container {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    background-color: yellow;
+    flex-direction: center;
+    background-color: rgb(251,176,52);
 }
 
 .container .middle {
     text-align: center;
-    background-color: red;
-    font-size: 25px;
+    background-color: rgb(150, 15, 39);
+    padding: 4px;
+    font-size: 100px;
+    color: rgb(255, 255, 255)
     
 }
 
 .container .middle li{
     list-style: none;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 200px;
     border: 2px solid black;
+    padding: 16px;
+    margin-bottom: 20px;
+    font-size: 50px;
 }
 
 /* Left and right boxing done here */
 
 
 .container .left li {
-    border: 1px solid black;
+    border: 3px solid black;
     list-style: none;
-    background-color: grey;
+    border-radius: 200px;
+    background-color: rgb(150, 15, 39);
     text-align: center;
-    padding: 15px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    padding: 19px;
+    font-size: 20px;
     
 }
 
 .container .left{
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .container .right li{
-    border: 1px solid black;
+    border: 3px solid black;
     list-style: none;
-    background-color: grey;
+    border-radius: 200px;
+    background-color: rgb(150, 15, 39);
     text-align: center;
-    padding: 15px;
+    margin-bottom: 10px;
+    padding: 19px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 
 }
 
 .container .right{
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .container .right img {
