@@ -49,9 +49,17 @@ app.post("/discussions", (req, res) => {
         })
 })
 
+
+
 app.get('/discussions/create', (req, res) => {
     res.render('create_discussion', { title: 'Create Discussion'});
 })
+
+// all articles
+app.get('/allArticles', (req, res) => {
+    res.render('all_articles', { title: 'Articles'});
+})
+
 
 
 
