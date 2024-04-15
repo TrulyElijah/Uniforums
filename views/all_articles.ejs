@@ -4,30 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/all_discussions.css">
+    <link rel="stylesheet" href="../css/all_articles.css">
     <title>Uniforums | <%= title %></title>
 </head>
 <body>
 
     <%- include('./partials/navbar.ejs') %>
-    
-    <main>
-        <div class="search-container">
-            <input type="text" placeholder="Search">
-            <button>Search</button>
-        </div>
-        <ol class ="discussion-posts">
+    <ul id="articleList">
+        <!-- Articles will be dynamically added here -->
+    </ul>
 
-            <% if (discussions.length > 0) { %>
-                <% discussions.forEach(discussion => { %>
-                <li><button type="button"> <%= discussion.title %> </button></li>
-            
-                <% }) %>
-            <% }else {%>
-                <p> There are no discussions to display...</p>
-                <%  }%>
-
-        </ol>
-    </main>
+    <script>
+        // Number of articles
+        var numberOfArticles = 15; // value for num of articles
+        var articleList = document.getElementById('articleList');
+        for (var i = 1; i <= numberOfArticles; i++) {
+            var articleItem = document.createElement('li');
+            var button = document.createElement('button');
+            button.textContent = 'Article ' + i;
+            articleItem.appendChild(button);
+            articleList.appendChild(articleItem);
+        }
+    </script>
 </body>
+
 </html>
