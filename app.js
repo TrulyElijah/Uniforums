@@ -55,18 +55,6 @@ app.get('/discussions/create', (req, res) => {
     res.render('create_discussion', { title: 'Create Discussion'});
 })
 
-<<<<<<< HEAD
-=======
-// all articles
-app.get('/allArticles', (req, res) => {
-    res.render('all_articles', { title: 'Articles'});
-})
-
-
-
-
-
->>>>>>> 7e82087d6abdb12d02b23425092d437e45e00183
 // announcements
 app.get('/createAnnouncement', (req, res) => {
     res.render('create_announcement', { title: 'Create Announcement'});
