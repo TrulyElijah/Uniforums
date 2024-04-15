@@ -10,26 +10,21 @@
 <body>
 
     <%- include('./partials/navbar.ejs') %>
-    
-    <main>
-        <div class="search-container">
-            <input type="text" placeholder="Search">
-            <button>Search</button>
-        </div>
-        <ol class ="discussion-posts">
+    <ul id="discussionList">
+        <!-- Discussions will be dynamically added here -->
+    </ul>
 
-            <% if (discussions.length > 0) { %>
-                <% discussions.forEach(discussion => { %>
-                <a href=""><button type="button"></button><li> <%= discussion.title %> </li></button></a>
-                <!-- Somehow bring this to a single discussion page -->
-                <!-- Use id of discussion post as url -->
-            
-                <% }) %>
-            <% }else {%>
-                <p> There are no discussions to display...</p>
-                <%  }%>
-
-        </ol>
-    </main>
+    <script>
+        // Number of discussions
+        var numberOfDiscussions = 15; // value for num of articles
+        var discussionList = document.getElementById('discussionList');
+        for (var i = 1; i <= numberOfDiscussions; i++) {
+            var discussionItem = document.createElement('li');
+            var button = document.createElement('button');
+            button.textContent = 'Discussion ' + i;
+            discussionItem.appendChild(button);
+            discussionList.appendChild(discussionItem);
+        }
+    </script>
 </body>
 </html>
