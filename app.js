@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 })
 
 
-// all discussions
+// all discussions NOT WORKING
 app.get('/discussions', (req, res) => {
     Discussion.find()
     .then((result) => {
@@ -53,9 +53,6 @@ app.get('/discussions/create', (req, res) => {
     res.render('create_discussion', { title: 'Create Discussion'});
 })
 
-
-
-
 // announcements
 app.get('/createAnnouncement', (req, res) => {
     res.render('create_announcement', { title: 'Create Announcement'});
@@ -66,8 +63,6 @@ app.get('/singleAnnouncement', (req, res) => {
 })
 
 // all announcements here 
-
-
 
 //newss articles (don't create, uploaded from school somehow)
 
@@ -92,13 +87,12 @@ app.get('/singleArticle', (req, res) => {
     res.render('single_article', { title: 'Article'});
 })
 
+//remove??
 app.get('/allDiscussions', (req, res) => {
     res.render('all_discussions', { title: 'All Discussions'});
 })
 
-
-
 app.use((req, res) => {
-    res.status(404).render('404');
+    res.status(404).render('404', { title : "404"});
 })
 
