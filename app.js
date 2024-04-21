@@ -3,6 +3,7 @@ const app = express();
 const morgan = require('morgan');
 const mongoose = require('mongoose')
 const Discussion = require('./models/discussions');
+const { render } = require('ejs');
 
 
 // Connect to mongoDB
@@ -19,14 +20,17 @@ app.use(morgan("dev"));
 app.use(express.static('views'));
 app.use(express.static(__dirname + '/public')); //contains css and images
 
-// mongoose and mongo sandbox routes
+
+
+
+
 
 app.get('/', (req, res) => {
     res.render('home', { title: 'Home'});
 })
 
 
-// all discussions NOT WORKING
+// DISCUSSIONS
 app.get('/discussions', (req, res) => {
     Discussion.find()
     .then((result) => {
@@ -49,10 +53,32 @@ app.post("/discussions", (req, res) => {
         })
 })
 
-
-
 app.get('/discussions/create', (req, res) => {
     res.render('create_discussion', { title: 'Create Discussion'});
+})
+
+app.get("/discussions/:id", (req, res) => {
+    const id = req.params.id
+    console.log(id)
+    Discussion.findById(id)
+        .then(result => { // title is the tab title
+            res.render("single_discussion", { title: "Single Discussion", discussion: result })
+        })
+        .catch(err => {
+            console.log(err)
+        })
+})
+        
+// error potentially because we are not deleting from /discussions but from /discussions/create
+app.delete('/discussions/:id', (req, res) => {
+    const id = req.params.id
+    Discussion.findByIdAndDelete(id)
+        .then((result) => {
+            res.json({ redirect: '/discussions'})
+        })
+        .catch(err => {
+            console.log(err)
+        })
 })
 
 // announcements
@@ -93,10 +119,6 @@ app.get('/singleArticle', (req, res) => {
 //remove??
 app.get('/allArticles', (req, res) => {
     res.render('all_articles', { title: 'All Articles'});
-})
-
-app.get('/allDiscussions', (req, res) => {
-    res.render('all_discussions', { title: 'All Discussions'});
 })
 
 app.use((req, res) => {

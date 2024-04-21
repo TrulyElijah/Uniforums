@@ -10,21 +10,22 @@
 <body>
 
     <%- include('./partials/navbar.ejs') %>
-    <ul id="discussionList">
-        <!-- Discussions will be dynamically added here -->
-    </ul>
+    <main>
+        <ol class ="discussion-posts">
 
-    <script>
-        // Number of discussions
-        var numberOfDiscussions = 15; // value for num of articles
-        var discussionList = document.getElementById('discussionList');
-        for (var i = 1; i <= numberOfDiscussions; i++) {
-            var discussionItem = document.createElement('li');
-            var button = document.createElement('button');
-            button.textContent = 'Discussion ' + i;
-            discussionItem.appendChild(button);
-            discussionList.appendChild(discussionItem);
-        }
-    </script>
+            <% if (discussions.length > 0) { %>
+                
+                <% discussions.forEach(discussion => { %>
+                <!-- <a href="/discussions/"></a> -->
+                <a href="/discussions/<%= discussion._id %>"><li> <%= discussion.title %> </li></a>
+
+                <% }) %>
+
+            <% }else {%>
+                <p> There are no discussions to display...</p>
+                <%  }%>
+
+        </ol>
+    </main>
 </body>
 </html>

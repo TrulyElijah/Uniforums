@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/single_article.css">
+    <title>Uniforums | <%= title %></title>
+</head>
+<body>
+
+    <%- include('./partials/navbar.ejs') %>
+
+    <div >
+        <a class="delete" href="/discussions" data-doc="<%= discussion._id %>">Delete</a>
+    </div>
+
+    <div class="container">
+        <div class="outer-box">
+            <form action="" class="article">  
+                <!-- Page made for clicking on discussion and seeing it on its on page -->
+                <div><h2> <%= discussion.title %>  </h2> <h2>Author</h2></div> <!-- Account username -->
+                
+                <p> <%= discussion.discussion %> </p>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const trashcan = document.querySelector("a.delete"); //a tag delete class
+        trashcan.addEventListener('click', (e) => {
+            const endpoint = `/discussions/${trashcan.dataset.doc}`; //dataset is from data-doc
+
+            fetch(endpoint, {
+                method: 'DELETE'
+            })
+            .then((respnse) => { //response is json data from fetch
+                response.json()
+            })
+            .then((data) => {
+                window.location.href = data.redirect
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+        })
+    </script>
+    
+</body>
+</html>
