@@ -121,6 +121,10 @@ app.get('/allArticles', (req, res) => {
     res.render('all_articles', { title: 'All Articles'});
 })
 
+app.get('/allAnnouncements', (req, res) => {
+    res.render('all_announcements', { title: 'All Announcements'});
+})
+
 app.use((req, res) => {
     res.status(404).render('404', { title : "404"});
 })
