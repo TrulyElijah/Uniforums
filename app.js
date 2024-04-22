@@ -81,6 +81,11 @@ app.delete('/discussions/:id', (req, res) => {
         })
 })
 
+//news
+app.get('/news', (req, res) => {
+    res.render('all_news', { title: 'All News Articles'});
+})
+
 // announcements
 app.get('/createAnnouncement', (req, res) => {
     res.render('create_announcement', { title: 'Create Announcement'});

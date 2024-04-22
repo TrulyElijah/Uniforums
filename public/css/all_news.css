@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.search-container {
+    width: 100px;
+}
+
+.search-container input[type=text] {
+    width: 300px;
+}
+
+button {
+    font-size: 16px; 
+    padding: 5px 20px; 
+    margin: 0px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px
+    
+}
