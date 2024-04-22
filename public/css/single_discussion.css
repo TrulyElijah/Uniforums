@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    background-color: black;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav .search{
+    margin-left: 25px;
+}
+
+header nav .profile{
+    margin-right: 25px;
+}
+
+header img{
+    height: 100px;
+}
+
+
+/* Announcement Box */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.outer-box{
+
+    /* box-shadow: 1px 1px 1px 1px rgb(0, 0, 0); */
+    border: solid black 1px;
+    padding: 40px;
+    border-radius: 20px;
+
+}
+
+.announcement div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* delete button */
+.delete-box{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.delete {
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}

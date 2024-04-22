@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/single_article.css">
+    <link rel="stylesheet" href="../css/single_discussion.css">
     <title>Uniforums | <%= title %></title>
 </head>
 <body>
 
     <%- include('./partials/navbar.ejs') %>
 
-    <div >
+    <div class="delete-box">
         <a class="delete" href="/discussions" data-doc="<%= discussion._id %>">Delete</a>
     </div>
 
     <div class="container">
         <div class="outer-box">
-            <form action="" class="article">  
-                <!-- Page made for clicking on discussion and seeing it on its on page -->
-                <div><h2> <%= discussion.title %>  </h2> <h2>Author</h2></div> <!-- Account username -->
+            <form action="" class="announcement">  
+
+                <div><h2> <%= discussion.title %>  </h2> <h4> Author </h4></div> <!-- Account username -->
                 
                 <p> <%= discussion.discussion %> </p>
 
