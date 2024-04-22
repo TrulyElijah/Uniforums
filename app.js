@@ -81,6 +81,11 @@ app.delete('/discussions/:id', (req, res) => {
         })
 })
 
+//news
+app.get('/news', (req, res) => {
+    res.render('all_news', { title: 'All News Articles'});
+})
+
 // announcements
 app.get('/createAnnouncement', (req, res) => {
     res.render('create_announcement', { title: 'Create Announcement'});
@@ -119,6 +124,10 @@ app.get('/singleArticle', (req, res) => {
 //remove??
 app.get('/allArticles', (req, res) => {
     res.render('all_articles', { title: 'All Articles'});
+})
+
+app.get('/allAnnouncements', (req, res) => {
+    res.render('all_announcements', { title: 'All Announcements'});
 })
 
 app.use((req, res) => {
