@@ -6,7 +6,8 @@ header nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    align-items: center;
+    
+    
 }
 
 header nav .search{
@@ -20,4 +21,42 @@ header nav .profile{
 
 header img{
     height: 100px;
+   margin: center;
+}
+
+head  .tabs{
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;    
+
+    
+}
+
+header .tabs .D{
+    
+    background-color: white;
+    width: fit-content;
+    height:fit-content;
+    margin-left: 450px;
+    
+   
+}
+
+header .tabs .A{
+   
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 450px;
+    
+   
+}
+
+header .tabs .N{
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 450px;
+   
+    
 }
