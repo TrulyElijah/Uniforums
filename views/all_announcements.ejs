@@ -11,26 +11,40 @@
 
     <%- include('./partials/navbar.ejs') %>
     
-    <ul id="articleList">
-        <!-- Articles will be dynamically added here -->
+    
+    <ul id="announcementList">
+        <li><button class="annButton">Announcement 31</button></li>
+        <li><button class="annButton">Announcement 30</button></li>
+        <li><button class="annButton">Announcement 29</button></li>
+        <li><button class="annButton">Announcement 28</button></li>
+        <li><button class="annButton">Announcement 27</button></li>
+        <li><button class="annButton">Announcement 26</button></li>
+        <li><button class="annButton">Announcement 25</button></li>
+        <li><button class="annButton">Announcement 24</button></li>
+        <li><button class="annButton">Announcement 23</button></li>
+        <li><button class="annButton">Announcement 22</button></li>
+        <li><button class="annButton">Announcement 21</button></li>
+        <li><button class="annButton">Announcement 20</button></li>
+        <li><button class="annButton">Announcement 19</button></li>
+        <li><button class="annButton">Announcement 18</button></li>
+        <li><button class="annButton">Announcement 17</button></li>
+        <li><button class="annButton">Announcement 16</button></li>
+        <li><button class="annButton">Announcement 15</button></li>
+        <li><button class="annButton">Announcement 14</button></li>
+        <li><button class="annButton">Announcement 13</button></li>
+        <li><button class="annButton">Announcement 12</button></li>
+        <li><button class="annButton">Announcement 11</button></li>
+        <li><button class="annButton">Announcement 10</button></li>
+        <li><button class="annButton">Announcement 9</button></li>
+        <li><button class="annButton">Announcement 8</button></li>
+        <li><button class="annButton">Announcement 7</button></li>
+        <li><button class="annButton">Announcement 6</button></li>
+        <li><button class="annButton">Announcement 5</button></li>
+        <li><button class="annButton">Announcement 4</button></li>
+        <li><button class="annButton">Announcement 3</button></li>
+        <li><button class="annButton">Announcement 2</button></li>
+        <li><button class="annButton">Announcement 1</button></li>
     </ul>
-    <div class="pagination">
-        <button class="page-button">1</button>
-        <button class="page-button">2</button>
-    </div>
-    <script>
-        // Number of articles
-        var numberOfArticles = 1; // value for num of articles
-        var articleList = document.getElementById('articleList');
-        for (var i = 32; i >= numberOfArticles; i--) {
-            var articleItem = document.createElement('li');
-            var button = document.createElement('button');
-            button.textContent = 'Announcements ' + i;
-            button.className = 'article-button';
-            articleItem.appendChild(button);
-            articleList.appendChild(articleItem);
-        }
-    </script>
 </body>
 
 </html>
