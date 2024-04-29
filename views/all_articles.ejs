@@ -10,22 +10,40 @@
 <body>
 
     <%- include('./partials/navbar.ejs') %>
+    
     <ul id="articleList">
-        <!-- Articles will be dynamically added here -->
+        <li><button class="artButton">Article 31</button></li>
+        <li><button class="artButton">Article 30</button></li>
+        <li><button class="artButton">Article 29</button></li>
+        <li><button class="artButton">Article 28</button></li>
+        <li><button class="artButton">Article 27</button></li>
+        <li><button class="artButton">Article 26</button></li>
+        <li><button class="artButton">Article 25</button></li>
+        <li><button class="artButton">Article 24</button></li>
+        <li><button class="artButton">Article 23</button></li>
+        <li><button class="artButton">Article 22</button></li>
+        <li><button class="artButton">Article 21</button></li>
+        <li><button class="artButton">Article 20</button></li>
+        <li><button class="artButton">Article 19</button></li>
+        <li><button class="artButton">Article 18</button></li>
+        <li><button class="artButton">Article 17</button></li>
+        <li><button class="artButton">Article 16</button></li>
+        <li><button class="artButton">Article 15</button></li>
+        <li><button class="artButton">Article 14</button></li>
+        <li><button class="artButton">Article 13</button></li>
+        <li><button class="artButton">Article 12</button></li>
+        <li><button class="artButton">Article 11</button></li>
+        <li><button class="artButton">Article 10</button></li>
+        <li><button class="artButton">Article 9</button></li>
+        <li><button class="artButton">Article 8</button></li>
+        <li><button class="artButton">Article 7</button></li>
+        <li><button class="artButton">Article 6</button></li>
+        <li><button class="artButton">Article 5</button></li>
+        <li><button class="artButton">Article 4</button></li>
+        <li><button class="artButton">Article 3</button></li>
+        <li><button class="artButton">Article 2</button></li>
+        <li><button class="artButton">Article 1</button></li>
     </ul>
-
-    <script>
-        // Number of articles
-        var numberOfArticles = 15; // value for num of articles
-        var articleList = document.getElementById('articleList');
-        for (var i = 1; i <= numberOfArticles; i++) {
-            var articleItem = document.createElement('li');
-            var button = document.createElement('button');
-            button.textContent = 'Article ' + i;
-            articleItem.appendChild(button);
-            articleList.appendChild(articleItem);
-        }
-    </script>
 </body>
 
 </html>
