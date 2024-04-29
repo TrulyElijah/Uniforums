@@ -12,13 +12,17 @@
     width: 300px;
 }
 
-button {
+body {
+    background-color:white
+}
+
+.artButton {
     font-size: 16px; 
     padding: 5px 50px; 
     margin: 0px; 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 200px
-    
+    width: 500px
+}
+
+#articleList {
+    text-align: center;
 }
