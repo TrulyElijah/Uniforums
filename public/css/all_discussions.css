@@ -12,14 +12,14 @@
     width: 300px;
 }
 
-button {
+.discButton {
     font-size: 16px; 
     padding: 5px 50px; 
     margin: 0px; 
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 200px;
+    width: 500px;
     margin: 0 auto;
     
 }
