@@ -34,29 +34,26 @@ head  .tabs{
 
 header .tabs .D{
     
-    background-color: white;
+    background-color: black;
     width: fit-content;
     height:fit-content;
-    margin-left: 450px;
     
    
 }
 
 header .tabs .A{
    
-    background-color: white;
+    background-color: black;
     width: fit-content;
     height: fit-content;
-    margin-left: 450px;
     
    
 }
 
 header .tabs .N{
-    background-color: white;
+    background-color: black;
     width: fit-content;
     height: fit-content;
-    margin-left: 450px;
    
     
 }
