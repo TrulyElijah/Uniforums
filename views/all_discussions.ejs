@@ -17,13 +17,13 @@
                 
                 <% discussions.forEach(discussion => { %>
                 <!-- <a href="/discussions/"></a> -->
-                <li>
+                
                     <div class="button-container">
                         <a href="/discussions/<%= discussion._id %>"> 
-                            <button><%= discussion.title %></button>
+                            <button class="discButton"><%= discussion.title %></button>
                         </a> 
                     </div>
-                </li>
+                
 
                 <% }) %>
 
