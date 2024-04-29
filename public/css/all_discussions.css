@@ -10,7 +10,7 @@
 
 .search-container input[type=text] {
     width: 300px;
-} */
+}
 
 button {
     font-size: 16px; 
@@ -19,6 +19,18 @@ button {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 200px
+    width: 200px;
+    margin: 0 auto;
     
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
