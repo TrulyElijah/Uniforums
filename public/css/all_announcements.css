@@ -12,44 +12,17 @@
     width: 300px;
 }
 
-.article-button {
+body {
+    background-color:white
+}
+
+.annButton {
     font-size: 16px; 
     padding: 5px 50px; 
     margin: 0px; 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     width: 500px
 }
 
-#articleList li {
+#announcementList{
     text-align: center;
-}
-
-.pagination {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    text-align: center;
-}
-
-.page-button {
-    font-size: 16px;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    cursor: pointer;
-}
-
-.page-button:hover {
-    background-color: #e0e0e0;
-}
-
-.page-button:focus {
-    outline: none;
-}
-
-body {
-    background-color:lightgrey
 }
